@@ -19,7 +19,7 @@ add_executable(app src/main.cpp)
 target_link_libraries(app PRIVATE median)
 
 # testing binary
-add_executable(unit-test test/test.cpp)
+add_executable(unit-test test/test.cpp src/TestMedianCalculator.cpp)
 target_link_libraries(unit-test PRIVATE median)
 
 # define tests
